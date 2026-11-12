@@ -1,0 +1,84 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-11-12
+  Info:
+    - First public release.
+  Features:
+    - Phase disruptor: 2x2 armor equipment that locks wild, wandering energy streams onto enemies within 15 tiles, with a coiling blue filament, impact sparks, a glowing tip and sound.
+    - Every module fires its own stream; streams from the same suit are in phase and safe to cross.
+    - Crossing the streams: streams from two different emitters on the same target cause a massive explosion (map setting).
+    - Single stream mode for big suits or busy multiplayer maps (map setting).
+---------------------------------------------------------------------------------------------------
+Version: 0.1.11
+Date: 2026-11-12
+  Optimizations:
+    - Detail budget: the first 2 streams from a suit get sparks, the filament, the tip glow and the light; any more are just the glowing stream. Big multi-target fights cost much less.
+    - Fewer, single-layer sparks (WePlay: Beam Library 0.6.1).
+---------------------------------------------------------------------------------------------------
+Version: 0.1.10
+Date: 2026-11-12
+  Changes:
+    - Streams shoot out of the muzzle and reach for the target over a few ticks instead of popping in. This also smooths out the performance spike when a stream starts.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 2026-11-12
+  Optimizations:
+    - Streams redraw every other tick, staggered so half update on even ticks and half on odd.
+    - Long streams cost the same as medium ones, and the filament uses far fewer points (WePlay: Beam Library 0.5.0).
+    - Extra streams on the same target skip their own sparks, tip glow and light; the main stream still has them all.
+  Changes:
+    - Streams in progress when loading a save from an older version are cleared and come back on the next hit.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 2026-11-12
+  Features:
+    - Map setting "Single stream mode": draws one stream per shooter per target however many disruptors are hitting it. Same damage, much cheaper to draw.
+  Optimizations:
+    - Streams are cheaper to draw (WePlay: Beam Library 0.4.1).
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 2026-11-12
+  Changes:
+    - Back to the free-for-all: every stream dances on its own again, even when several share a target. Streams from the same pack are in phase, so they're safe to cross.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 2026-11-12
+  Changes:
+    - Several streams from one suit into the same target now fan out into their own lanes and only meet at the tip. A lone stream still wanders freely.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 2026-11-12
+  Changes:
+    - Several disruptors on the same target now each draw their own stream (counted from hits per damage tick), all wandering separately and meeting at the target. Only one of them hums, so it doesn't get deafening.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 2026-11-12
+  Features:
+    - Crossing the streams: when streams from two different shooters lock onto the same target, it explodes violently. Can be turned off in map settings.
+  Changes:
+    - Smoother power-down sound: it now starts with a stretch of hum that crossfades into the tail.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2026-11-12
+  Features:
+    - Sound: an ignition burst when the stream locks on, a crackling hum while it holds, and a power-down tail when it lets go.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2026-11-12
+  Bugfixes:
+    - Fixed the stream disappearing while the disruptor kept damaging a target (seen on nests and worms). Every damage tick now keeps the stream alive, not only the start of a shot.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2026-11-12
+  Bugfixes:
+    - Fixed a crash on the first shot (needs WePlay: Beam Library 0.2.1).
+    - The shooter is now also found when the game only reports it as the cause of the shot.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2026-11-12
+  Features:
+    - Phase disruptor: 2x2 armor equipment that automatically locks a wandering energy stream onto enemies within 15 tiles.
+    - The stream meanders and its tip circles the target, with a blue filament coiling around it and sparks spraying where it hits.
+    - Switching targets swings the stream over instead of popping; a burst of sparks when a target dies.
+    - 12 electric damage every 10 ticks per stream; 60 kJ per 20-tick shot from your suit. Laser research bonuses apply.
+    - Unlocked by its own technology after Personal laser defense.
