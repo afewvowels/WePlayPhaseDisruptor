@@ -82,8 +82,8 @@ sound/             start, loop-1..3, stop (.ogg)
 
 - Inspired by the proton packs from *Ghostbusters*. This is a fan tribute and is not affiliated with or endorsed by Sony Pictures.
 - The equipment icon was made with AI image generation (Grok).
-- Sounds were cut from "Laser Beam 01" (SOUND_SOURCE_HERE).
+- Sounds were built from an Envato Elements asset ("Laser Beam 01"), reworked into an ignition burst, a seamless crackling hum and a crossfaded power-down.
 
 ## License
 
-Code is released under the [Unlicense](https://unlicense.org/). The sound files are not covered by the Unlicense and stay under their original licence.
+Code is released under the [Unlicense](https://unlicense.org/). The sound files in `sound/` are used under the Envato Elements licence and are not covered by the Unlicense.
