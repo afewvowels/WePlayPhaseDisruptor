@@ -2,7 +2,7 @@
 
 Armor equipment for Factorio 2.1 that locks wild, wandering energy streams onto nearby enemies. Just don't cross the streams.
 
-![Phase Disruptor in action](https://i.imgur.com/RnE7rNK.gif)
+![Phase Disruptor in action](https://imgur.com/RnE7rNK.gif)
 
 - **Mod portal:** https://mods.factorio.com/mod/WePlayPhaseDisruptor
 - **Requires:** [WePlay: Beam Library](https://mods.factorio.com/mod/WePlayBeamLib) ([source](https://github.com/afewvowels/WePlayBeamLib)) ≥ 0.6.1
